@@ -3,6 +3,7 @@
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
+\usepackage[colorlinks=true, hidelinks]{hyperref}
 \usepackage[romanian]{babel}
 \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
 
@@ -31,18 +32,23 @@
 
 \subsection{Problema}
 \paragraph{}
+Se cere realizarea unui osciloscop digital.
+
+\section{Fundamentare teoretica}
+\paragraph{}
 Osciloscopul este un dispozitiv electronic de testare ce permite 
 observarea unor semnale ce variaza constant sub forma unui grafic bidimensional.
 Graficul foloseste axa Y pentru a reprezenta valoarea semnalului in functie de timp.
 
-Propunem o implementare in limbaj de descriere hardware a unui osciloscop ce poate
-fi implementat pe o placa FPGA ce dispune de un convertor analog digital pentru intrare
-si un port VGA pentru iesire.
-
-\section{Fundamentare teoretica}
-asdfa sdfa sdf asdf
-
 \section{Proiectare si implementare}
+\paragraph{}
+Propunem o implementare in limbaj de descriere hardware a unui osciloscop digital ce poate fi sintetizat pe o placa \textbf{FPGA Basys 2 (Spartan 3E)}. Pentru esantionarea semnalului de intrare vom folosi un convertor analog digital. Vom realiza un protocol de comunicare intre convertor si placuta FPGA astfel incat sa fie usor de schimbat cu alt convertor de exemplu. Frecventa de esantionare a semnalului o vom controla de la switch-uri sau butoane. 
+\paragraph{}
+Dispunem de o placuta \textbf{CEREBOT II}, placuta care are integrat un  \textbf{convertor AD/10 biti} pe care il putem folosi. Pentru afisarea datelor vom folosi un monitor cu intrare \textbf{VGA}. Placuta Basys 2 dispune de o iesire VGA integrata. Controlul osciloscopului se va face cu ajutorul butoanelor si switch-urilor placutei Basys 2.
+\paragraph{}
+Ideea de baza a dispozitivului e sa esantioneze un semnal la un interval de timp modificabil si sa salveze pentru fiecare perioada de timp o valoare care reprezinta amplitudinea semnalului de intrare. Dimensiunea intervalului de timp monitorizat este prestabilit sau se poate controla de la switch-uri/butoane. De fiecare data cand intervalul este baleiat vom trimite datele spre controller-ul VGA spre a fi afisate. 
+\paragraph{}
+Pentru afisarea graficului putem utiliza interpolare spline liniara intre valorile succesive ale amplitudinii semnalului. Cel mai probabil vom avea nevoie de o matrice bidimensionala de pixeli (framebuffer) in care vom desena forma de unda a semnalului de intrare.
 
 \section{Rezultate experimentale}
 
