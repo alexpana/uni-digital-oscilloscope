@@ -1,0 +1,16 @@
+Release 14.5 - WebTalk (P.58f)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+Project Information
+--------------------
+ProjectID=8943D0BF71C54BBEBD14511B1C303CDC
+ProjectIteration=1
+
+WebTalk Summary
+----------------
+INFO:WebTalk:1 - WebTalk is enabled because you are using a WebPACK license.
+
+INFO:WebTalk:8 - WebTalk Install setting is ON.
+INFO:WebTalk:6 - WebTalk User setting is ON.
+
+INFO:WebTalk:4 - D:/sources/uni-digital-oscilloscope/testproj/ttr/osc/usage_statistics_webtalk.html WebTalk report has been successfully sent to Xilinx on 2013-06-07T12:21:53.  For additional details about this file, please refer to the WebTalk help file at D:/Binaries/Xilinx/14.5/ISE_DS/ISE/data/reports/webtalk_introduction.html

@@ -1,0 +1,5 @@
+set -tmpdir "D:/Sources/uni-oscilloscope/xst/projnav.tmp"
+set -xsthdpdir "D:/Sources/uni-oscilloscope/xst"
+elaborate
+-ifn color_select.prj
+-ifmt mixed

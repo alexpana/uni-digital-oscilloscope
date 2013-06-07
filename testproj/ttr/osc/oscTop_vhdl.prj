@@ -1,0 +1,7 @@
+vhdl work "D:\sources\uni-digital-oscilloscope\testproj\ttr\osc\vga_ctrl.vhd"
+vhdl work "D:\sources\uni-digital-oscilloscope\testproj\ttr\osc\sampler.vhd"
+vhdl work "D:\sources\uni-digital-oscilloscope\testproj\ttr\osc\randgen.vhd"
+vhdl work "D:\sources\uni-digital-oscilloscope\testproj\ttr\osc\mux2to1.vhd"
+vhdl work "D:\sources\uni-digital-oscilloscope\testproj\ttr\osc\comm.vhd"
+vhdl work "D:\sources\uni-digital-oscilloscope\testproj\ttr\osc\cmp.vhd"
+vhdl work "D:\sources\uni-digital-oscilloscope\testproj\ttr\osc\oscTop.vhd"

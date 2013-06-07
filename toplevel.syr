@@ -1,0 +1,437 @@
+Release 14.5 - xst P.58f (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> Reading design: toplevel.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "toplevel.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "toplevel"
+Output Format                      : NGC
+Target Device                      : xc3s100e-4-cp132
+
+---- Source Options
+Top Module Name                    : toplevel
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/sources/uni-oscilloscope/vga_ctrl.vhd" in Library work.
+Architecture behavioral of Entity vga_ctrl is up to date.
+Compiling vhdl file "D:/sources/uni-oscilloscope/sample_mem.vhd" in Library work.
+Architecture behavioral of Entity sample_mem is up to date.
+Compiling vhdl file "D:/sources/uni-oscilloscope/cmp.vhd" in Library work.
+Architecture behavioral of Entity cmp is up to date.
+Compiling vhdl file "D:/sources/uni-oscilloscope/mux2to1.vhd" in Library work.
+Architecture behavioral of Entity mux2to1 is up to date.
+Compiling vhdl file "D:/sources/uni-oscilloscope/oscilloscope.vhd" in Library work.
+Entity <toplevel> compiled.
+Entity <toplevel> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <toplevel> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <vga_ctrl> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <sample_mem> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <cmp> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <mux2to1> in library <work> (architecture <Behavioral>) with generics.
+	n = 8
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <toplevel> in library <work> (Architecture <behavioral>).
+Entity <toplevel> analyzed. Unit <toplevel> generated.
+
+Analyzing Entity <vga_ctrl> in library <work> (Architecture <Behavioral>).
+Entity <vga_ctrl> analyzed. Unit <vga_ctrl> generated.
+
+Analyzing Entity <sample_mem> in library <work> (Architecture <Behavioral>).
+INFO:Xst:2679 - Register <dataOut> in unit <sample_mem> has a constant value of 011111111 during circuit operation. The register is replaced by logic.
+Entity <sample_mem> analyzed. Unit <sample_mem> generated.
+
+Analyzing Entity <cmp> in library <work> (Architecture <Behavioral>).
+Entity <cmp> analyzed. Unit <cmp> generated.
+
+Analyzing generic Entity <mux2to1> in library <work> (Architecture <Behavioral>).
+	n = 8
+Entity <mux2to1> analyzed. Unit <mux2to1> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <vga_ctrl>.
+    Related source file is "D:/sources/uni-oscilloscope/vga_ctrl.vhd".
+    Found 11-bit comparator less for signal <CE$cmp_lt0000> created at line 76.
+    Found 11-bit comparator less for signal <CE$cmp_lt0001> created at line 76.
+    Found 1-bit register for signal <clk25Hz>.
+    Found 10-bit up counter for signal <hcounter>.
+    Found 11-bit comparator greatequal for signal <HSYNC$cmp_ge0000> created at line 67.
+    Found 11-bit comparator less for signal <HSYNC$cmp_lt0000> created at line 67.
+    Found 10-bit up counter for signal <vcounter>.
+    Found 11-bit comparator greatequal for signal <VSYNC$cmp_ge0000> created at line 61.
+    Found 11-bit comparator less for signal <VSYNC$cmp_lt0000> created at line 61.
+    Summary:
+	inferred   2 Counter(s).
+	inferred   1 D-type flip-flop(s).
+	inferred   6 Comparator(s).
+Unit <vga_ctrl> synthesized.
+
+
+Synthesizing Unit <sample_mem>.
+    Related source file is "D:/sources/uni-oscilloscope/sample_mem.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <addr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <we> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <dataIn> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <sample_mem> synthesized.
+
+
+Synthesizing Unit <cmp>.
+    Related source file is "D:/sources/uni-oscilloscope/cmp.vhd".
+    Found 1-bit xor2 for signal <equal$xor0000> created at line 14.
+    Found 1-bit xor2 for signal <equal$xor0001> created at line 14.
+    Found 1-bit xor2 for signal <equal$xor0002> created at line 14.
+    Found 1-bit xor2 for signal <equal$xor0003> created at line 14.
+    Found 1-bit xor2 for signal <equal$xor0004> created at line 14.
+    Found 1-bit xor2 for signal <equal$xor0005> created at line 14.
+    Found 1-bit xor2 for signal <equal$xor0006> created at line 14.
+    Found 1-bit xor2 for signal <equal$xor0007> created at line 14.
+    Found 1-bit xor2 for signal <equal$xor0008> created at line 14.
+Unit <cmp> synthesized.
+
+
+Synthesizing Unit <mux2to1>.
+    Related source file is "D:/sources/uni-oscilloscope/mux2to1.vhd".
+Unit <mux2to1> synthesized.
+
+
+Synthesizing Unit <toplevel>.
+    Related source file is "D:/sources/uni-oscilloscope/oscilloscope.vhd".
+WARNING:Xst:646 - Signal <sy<9>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <sx<9>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <toplevel> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 2
+ 10-bit up counter                                     : 2
+# Registers                                            : 1
+ 1-bit register                                        : 1
+# Comparators                                          : 6
+ 11-bit comparator greatequal                          : 2
+ 11-bit comparator less                                : 4
+# Xors                                                 : 9
+ 1-bit xor2                                            : 9
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1290 - Hierarchical block <C_MEM> is unconnected in block <toplevel>.
+   It will be removed from the design.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 2
+ 10-bit up counter                                     : 2
+# Registers                                            : 1
+ Flip-Flops                                            : 1
+# Comparators                                          : 6
+ 11-bit comparator greatequal                          : 2
+ 11-bit comparator less                                : 4
+# Xors                                                 : 9
+ 1-bit xor2                                            : 9
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <toplevel> ...
+
+Optimizing unit <vga_ctrl> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block toplevel, actual ratio is 2.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 21
+ Flip-Flops                                            : 21
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : toplevel.ngr
+Top Level Output File Name         : toplevel
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 11
+
+Cell Usage :
+# BELS                             : 79
+#      GND                         : 1
+#      INV                         : 2
+#      LUT1                        : 18
+#      LUT2                        : 1
+#      LUT3                        : 5
+#      LUT3_D                      : 1
+#      LUT4                        : 9
+#      LUT4_D                      : 1
+#      LUT4_L                      : 1
+#      MUXCY                       : 18
+#      MUXF5                       : 1
+#      VCC                         : 1
+#      XORCY                       : 20
+# FlipFlops/Latches                : 21
+#      FDR                         : 1
+#      FDRE                        : 20
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 10
+#      OBUF                        : 10
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100ecp132-4 
+
+ Number of Slices:                       20  out of    960     2%  
+ Number of Slice Flip Flops:             21  out of   1920     1%  
+ Number of 4 input LUTs:                 38  out of   1920     1%  
+ Number of IOs:                          11
+ Number of bonded IOBs:                  11  out of     83    13%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 21    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 6.137ns (Maximum Frequency: 162.946MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 8.694ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 6.137ns (frequency: 162.946MHz)
+  Total number of paths / destination ports: 551 / 61
+-------------------------------------------------------------------------
+Delay:               6.137ns (Levels of Logic = 3)
+  Source:            C_VGA_CTRL/hcounter_2 (FF)
+  Destination:       C_VGA_CTRL/vcounter_9 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: C_VGA_CTRL/hcounter_2 to C_VGA_CTRL/vcounter_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             2   0.591   0.622  C_VGA_CTRL/hcounter_2 (C_VGA_CTRL/hcounter_2)
+     LUT3_D:I0->O          1   0.704   0.595  C_VGA_CTRL/vcounter_and0000118 (C_VGA_CTRL/vcounter_and0000118)
+     LUT3:I0->O            1   0.704   0.424  C_VGA_CTRL/vcounter_and0000127 (C_VGA_CTRL/hcounter_and0000)
+     LUT4:I3->O           10   0.704   0.882  C_VGA_CTRL/vcounter_and000047 (C_VGA_CTRL/vcounter_and0000)
+     FDRE:R                    0.911          C_VGA_CTRL/vcounter_0
+    ----------------------------------------
+    Total                      6.137ns (3.614ns logic, 2.523ns route)
+                                       (58.9% logic, 41.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 119 / 10
+-------------------------------------------------------------------------
+Offset:              8.694ns (Levels of Logic = 5)
+  Source:            C_VGA_CTRL/hcounter_9 (FF)
+  Destination:       OutBlue<2> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: C_VGA_CTRL/hcounter_9 to OutBlue<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             4   0.591   0.762  C_VGA_CTRL/hcounter_9 (C_VGA_CTRL/hcounter_9)
+     LUT4:I0->O            1   0.704   0.000  OutBlue<2>411 (OutBlue<2>411)
+     MUXF5:I1->O           1   0.321   0.455  OutBlue<2>41_f5 (OutBlue<2>41)
+     LUT3:I2->O            1   0.704   0.424  OutBlue<2>65_SW0 (N2)
+     LUT4:I3->O            8   0.704   0.757  OutBlue<2>65 (OutBlue_2_OBUF)
+     OBUF:I->O                 3.272          OutBlue_2_OBUF (OutBlue<2>)
+    ----------------------------------------
+    Total                      8.694ns (6.296ns logic, 2.398ns route)
+                                       (72.4% logic, 27.6% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 3.13 secs
+ 
+--> 
+
+Total memory usage is 209872 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    7 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

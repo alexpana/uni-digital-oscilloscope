@@ -1,0 +1,50 @@
+V3 27
+FL D:/sources/uni-digital-oscilloscope/testproj/ttr/osc/cmp.vhd 2013/06/06.23:01:04 P.58f
+EN work/cmp 1370596756 \
+      FL D:/sources/uni-digital-oscilloscope/testproj/ttr/osc/cmp.vhd \
+      PB ieee/std_logic_1164 1364358218
+AR work/cmp/Behavioral 1370596757 \
+      FL D:/sources/uni-digital-oscilloscope/testproj/ttr/osc/cmp.vhd EN work/cmp 1370596756
+FL D:/sources/uni-digital-oscilloscope/testproj/ttr/osc/comm.vhd 2013/06/07.11:41:33 P.58f
+EN work/comm 1370596748 \
+      FL D:/sources/uni-digital-oscilloscope/testproj/ttr/osc/comm.vhd \
+      PB ieee/std_logic_1164 1364358218 PB ieee/STD_LOGIC_UNSIGNED 1364358221
+AR work/comm/Behavioral 1370596749 \
+      FL D:/sources/uni-digital-oscilloscope/testproj/ttr/osc/comm.vhd \
+      EN work/comm 1370596748
+FL D:/sources/uni-digital-oscilloscope/testproj/ttr/osc/mux2to1.vhd 2013/06/06.23:01:04 P.58f
+EN work/mux2to1 1370596758 \
+      FL D:/sources/uni-digital-oscilloscope/testproj/ttr/osc/mux2to1.vhd \
+      PB ieee/std_logic_1164 1364358218
+AR work/mux2to1/Behavioral 1370596759 \
+      FL D:/sources/uni-digital-oscilloscope/testproj/ttr/osc/mux2to1.vhd \
+      EN work/mux2to1 1370596758
+FL D:/sources/uni-digital-oscilloscope/testproj/ttr/osc/oscTop.vhd 2013/06/07.11:41:33 P.58f
+EN work/oscTop 1370596760 \
+      FL D:/sources/uni-digital-oscilloscope/testproj/ttr/osc/oscTop.vhd \
+      PB ieee/std_logic_1164 1364358218
+AR work/oscTop/Behavioral 1370596761 \
+      FL D:/sources/uni-digital-oscilloscope/testproj/ttr/osc/oscTop.vhd \
+      EN work/oscTop 1370596760 CP comm CP sampler CP randgen CP work/vga_ctrl \
+      CP work/cmp CP work/mux2to1
+FL D:/sources/uni-digital-oscilloscope/testproj/ttr/osc/randgen.vhd 2013/06/07.11:41:33 P.58f
+EN work/randgen 1370596752 \
+      FL D:/sources/uni-digital-oscilloscope/testproj/ttr/osc/randgen.vhd \
+      PB ieee/std_logic_1164 1364358218 PB ieee/STD_LOGIC_UNSIGNED 1364358221
+AR work/randgen/Behavioral 1370596753 \
+      FL D:/sources/uni-digital-oscilloscope/testproj/ttr/osc/randgen.vhd \
+      EN work/randgen 1370596752
+FL D:/sources/uni-digital-oscilloscope/testproj/ttr/osc/sampler.vhd 2013/06/07.11:41:33 P.58f
+EN work/sampler 1370596750 \
+      FL D:/sources/uni-digital-oscilloscope/testproj/ttr/osc/sampler.vhd \
+      PB ieee/std_logic_1164 1364358218 PB ieee/STD_LOGIC_UNSIGNED 1364358221
+AR work/sampler/Behavioral 1370596751 \
+      FL D:/sources/uni-digital-oscilloscope/testproj/ttr/osc/sampler.vhd \
+      EN work/sampler 1370596750
+FL D:/sources/uni-digital-oscilloscope/testproj/ttr/osc/vga_ctrl.vhd 2013/06/06.23:01:06 P.58f
+EN work/vga_ctrl 1370596754 \
+      FL D:/sources/uni-digital-oscilloscope/testproj/ttr/osc/vga_ctrl.vhd \
+      PB ieee/std_logic_1164 1364358218 PB ieee/STD_LOGIC_UNSIGNED 1364358221
+AR work/vga_ctrl/Behavioral 1370596755 \
+      FL D:/sources/uni-digital-oscilloscope/testproj/ttr/osc/vga_ctrl.vhd \
+      EN work/vga_ctrl 1370596754

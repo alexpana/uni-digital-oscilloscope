@@ -1,0 +1,5 @@
+vhdl work "D:\sources\uni-oscilloscope\vga_ctrl.vhd"
+vhdl work "D:\sources\uni-oscilloscope\sample_mem.vhd"
+vhdl work "D:\sources\uni-oscilloscope\mux2to1.vhd"
+vhdl work "D:\sources\uni-oscilloscope\cmp.vhd"
+vhdl work "D:\sources\uni-oscilloscope\oscilloscope.vhd"

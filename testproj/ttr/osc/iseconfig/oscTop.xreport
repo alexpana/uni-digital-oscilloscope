@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2013-06-07T11:18:05</DateModified>
+  <DateModified>2013-06-07T11:51:37</DateModified>
   <ModuleName>oscTop</ModuleName>
   <SummaryTimeStamp>2013-06-07T10:47:30</SummaryTimeStamp>
-  <SavedFilePath>E:/SEM2/SSC/project-repo/uni-digital-oscilloscope/testproj/ttr/osc/iseconfig/oscTop.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>E:/SEM2/SSC/project-repo/uni-digital-oscilloscope/testproj/ttr/osc\</ImplementationReportsDirectory>
+  <SavedFilePath>D:/sources/uni-digital-oscilloscope/testproj/ttr/osc/iseconfig/oscTop.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>D:/sources/uni-digital-oscilloscope/testproj/ttr/osc\</ImplementationReportsDirectory>
   <DateInitialized>2013-06-07T08:47:24</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

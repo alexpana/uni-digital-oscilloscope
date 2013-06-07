@@ -1,0 +1,5 @@
+vhdl work "vga_ctrl.vhd"
+vhdl work "sample_mem.vhd"
+vhdl work "mux2to1.vhd"
+vhdl work "cmp.vhd"
+vhdl work "oscilloscope.vhd"

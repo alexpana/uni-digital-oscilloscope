@@ -1,0 +1,14 @@
+EN mux2to1 NULL D:/sources/uni-digital-oscilloscope/testproj/ttr/osc/mux2to1.vhd sub00/vhpl10 1370596758
+AR comm behavioral D:/sources/uni-digital-oscilloscope/testproj/ttr/osc/comm.vhd sub00/vhpl01 1370596749
+EN vga_ctrl NULL D:/sources/uni-digital-oscilloscope/testproj/ttr/osc/vga_ctrl.vhd sub00/vhpl06 1370596754
+AR osctop behavioral D:/sources/uni-digital-oscilloscope/testproj/ttr/osc/oscTop.vhd sub00/vhpl13 1370596761
+EN cmp NULL D:/sources/uni-digital-oscilloscope/testproj/ttr/osc/cmp.vhd sub00/vhpl08 1370596756
+EN osctop NULL D:/sources/uni-digital-oscilloscope/testproj/ttr/osc/oscTop.vhd sub00/vhpl12 1370596760
+EN randgen NULL D:/sources/uni-digital-oscilloscope/testproj/ttr/osc/randgen.vhd sub00/vhpl04 1370596752
+AR mux2to1 behavioral D:/sources/uni-digital-oscilloscope/testproj/ttr/osc/mux2to1.vhd sub00/vhpl11 1370596759
+AR cmp behavioral D:/sources/uni-digital-oscilloscope/testproj/ttr/osc/cmp.vhd sub00/vhpl09 1370596757
+AR vga_ctrl behavioral D:/sources/uni-digital-oscilloscope/testproj/ttr/osc/vga_ctrl.vhd sub00/vhpl07 1370596755
+EN sampler NULL D:/sources/uni-digital-oscilloscope/testproj/ttr/osc/sampler.vhd sub00/vhpl02 1370596750
+AR sampler behavioral D:/sources/uni-digital-oscilloscope/testproj/ttr/osc/sampler.vhd sub00/vhpl03 1370596751
+EN comm NULL D:/sources/uni-digital-oscilloscope/testproj/ttr/osc/comm.vhd sub00/vhpl00 1370596748
+AR randgen behavioral D:/sources/uni-digital-oscilloscope/testproj/ttr/osc/randgen.vhd sub00/vhpl05 1370596753

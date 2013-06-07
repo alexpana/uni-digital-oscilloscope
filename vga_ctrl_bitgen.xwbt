@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\sources\uni-oscilloscope\vga_ctrl.ncd
+OUTFILE=D:\sources\uni-oscilloscope\vga_ctrl.bit
+FAMILY=Spartan3E
+PART=xc3s100e-4cp132
+WORKINGDIR=D:\sources\uni-oscilloscope
+LICENSE=WebPack
+USER_INFO=205544977_0_0_872
