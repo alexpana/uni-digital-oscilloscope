@@ -1,0 +1,14 @@
+\select@language {romanian}
+\contentsline {section}{\numberline {1}Rezumat}{2}{section.1}
+\contentsline {section}{\numberline {2}Introducere}{3}{section.2}
+\contentsline {subsection}{\numberline {2.1}Problema}{3}{subsection.2.1}
+\contentsline {paragraph}{}{3}{section*.2}
+\contentsline {section}{\numberline {3}Fundamentare teoretica}{3}{section.3}
+\contentsline {paragraph}{}{3}{section*.3}
+\contentsline {section}{\numberline {4}Proiectare si implementare}{3}{section.4}
+\contentsline {paragraph}{}{3}{section*.4}
+\contentsline {paragraph}{}{3}{section*.5}
+\contentsline {paragraph}{}{3}{section*.6}
+\contentsline {paragraph}{}{3}{section*.7}
+\contentsline {section}{\numberline {5}Rezultate experimentale}{3}{section.5}
+\contentsline {section}{\numberline {6}Concluzii}{3}{section.6}
