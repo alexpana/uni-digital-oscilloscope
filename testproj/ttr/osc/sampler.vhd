@@ -165,6 +165,8 @@ begin
 				
 				if diffSignal = '1' then
 					nextState <= ChangeDetected;
+				else
+					nextState <= Idle;
 				end if;
 				
 			when ChangeDetected =>
@@ -192,6 +194,8 @@ begin
 				
 				if sampleValid = '1' then
 					nextState <= Sleep;
+				else 
+					nextState <= WaitUntilTheEndOfConversion;
 				end if;
 					
 			when Sleep =>				
@@ -202,6 +206,8 @@ begin
 				
 				if freqsw = freq then
 					nextState <= EndSleep;
+				else
+					nextState <= Sleep;
 				end if;
 				
 			when EndSleep =>

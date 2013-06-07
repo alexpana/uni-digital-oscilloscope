@@ -101,6 +101,7 @@ architecture Behavioral of oscTop is
 	signal color2: std_logic_vector( 7 downto 0 );
 	signal ce: std_logic;
 	
+	signal tmp : std_logic_vector(8 downto 0);
 		
 begin
 
@@ -115,6 +116,8 @@ begin
 			reqBit => reqBit,
 			sampleValid => sampleValid,
 			sample => sample );
+			
+	tmp <= '0' & sw;
 			
 	fpga_sampler : sampler port map (
 			clk => clk,
@@ -155,7 +158,7 @@ begin
 	OutBlue <= color2( 1 downto 0 );
 
 	
-	led <= data;
+	led <= sw;
 	an <= (others => '0');
 	cat <= (others => '0');
 	dp <= '0';
