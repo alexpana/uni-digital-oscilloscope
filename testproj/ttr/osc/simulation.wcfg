@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="E:/SEM2/SSC/project-repo/uni-digital-oscilloscope/testproj/ttr/osc/testOsc_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="testosc" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="16" />
+   <wvobject fp_name="/testosc/sw" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sw[7:0]</obj_property>
+      <obj_property name="ObjectShortName">sw[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testosc/btn" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">btn[3:0]</obj_property>
+      <obj_property name="ObjectShortName">btn[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testosc/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testosc/led" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">led[7:0]</obj_property>
+      <obj_property name="ObjectShortName">led[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testosc/an" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">an[3:0]</obj_property>
+      <obj_property name="ObjectShortName">an[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testosc/cat" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">cat[6:0]</obj_property>
+      <obj_property name="ObjectShortName">cat[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testosc/dp" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">dp</obj_property>
+      <obj_property name="ObjectShortName">dp</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testosc/clk_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testosc/uut/fpga_sampler/sample" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sample[7:0]</obj_property>
+      <obj_property name="ObjectShortName">sample[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testosc/uut/fpga_sampler/samplevalid" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">samplevalid</obj_property>
+      <obj_property name="ObjectShortName">samplevalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testosc/uut/fpga_sampler/currentstate" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">currentstate</obj_property>
+      <obj_property name="ObjectShortName">currentstate</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testosc/uut/fpga_sampler/sweeper" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sweeper[8:0]</obj_property>
+      <obj_property name="ObjectShortName">sweeper[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testosc/uut/fpga_sampler/freqsw" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">freqsw[15:0]</obj_property>
+      <obj_property name="ObjectShortName">freqsw[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testosc/uut/fpga_sampler/we" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">we</obj_property>
+      <obj_property name="ObjectShortName">we</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testosc/uut/cerebot_comm/startbit" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">startbit</obj_property>
+      <obj_property name="ObjectShortName">startbit</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testosc/uut/fpga_sampler/rammemory[511]" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">[511]</obj_property>
+      <obj_property name="ObjectShortName">rammemory[511]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,4 @@
+work	"comm.vhd"
+work	"oscTop.vhd"
+work	"randgen.vhd"
+work	"sampler.vhd"
