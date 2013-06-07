@@ -36,7 +36,14 @@ entity oscTop is
 					led : out  STD_LOGIC_VECTOR (7 downto 0);
 					an : out  STD_LOGIC_VECTOR (3 downto 0);
 					cat : out  STD_LOGIC_VECTOR (6 downto 0);
-					dp : out  STD_LOGIC
+					dp : out  STD_LOGIC;
+						-- Basys2 output vga
+					
+					HSYNC:		out STD_LOGIC;
+					VSYNC:		out STD_LOGIC;
+					OutRed: 		out STD_LOGIC_VECTOR( 2 downto 0 );
+					OutGreen: 	out STD_LOGIC_VECTOR( 2 downto 0 );
+					OutBlue: 	out STD_LOGIC_VECTOR( 2 downto 1 )
 				);
 end oscTop;
 
@@ -86,11 +93,18 @@ architecture Behavioral of oscTop is
 	signal startBit : std_logic;
 	signal reqBit : std_logic;
 	
+	
+	signal sx, sy:	std_logic_vector( 9 downto 0 );
+	signal ssample: std_logic_vector( 8 downto 0 );
+	signal sel: std_logic;
+	signal color1: std_logic_vector( 7 downto 0 );
+	signal color2: std_logic_vector( 7 downto 0 );
+	signal ce: std_logic;
+	
 		
 begin
 
-	freq <= "0000" & sw & "0000";
-	
+	freq <= "0000" & sw & "0000";	
 	
 	cerebot_comm : comm port map (
 			reqSample => reqSample,
@@ -107,8 +121,8 @@ begin
 			sampleValid => sampleValid,
 			sample => sample,
 			freq => freq,
-			addr => addr,
-			data => data,
+			addr => sx(8 downto 0),
+			data => ssample(7 downto 0),
 			reqSample => reqSample
 		);
 		
@@ -121,8 +135,26 @@ begin
 		clk => clk
 	);
 	
-	addr <= "000000010";
-			
+	
+	C_VGA_CTRL: entity work.vga_ctrl
+					port map( clk, HSYNC, VSYNC, ce, sx, sy );
+
+	C_CMP:		entity work.cmp
+					port map( ssample, sy(8 downto 0), sel );
+
+	C_MUX1:		entity work.mux2to1		
+					generic map( 8 )
+					port map( "00000000", "11111111", sel, color1 );
+				
+	C_MUX2:		entity work.mux2to1
+					generic map( 8 )
+					port map( "00000000", color1, ce, color2 );
+					
+	OutRed <= color2( 7 downto 5 );
+	OutGreen <= color2( 4 downto 2 );
+	OutBlue <= color2( 1 downto 0 );
+
+	
 	led <= data;
 	an <= (others => '0');
 	cat <= (others => '0');

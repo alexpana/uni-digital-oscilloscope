@@ -1,4 +1,7 @@
+work	"cmp.vhd"
 work	"comm.vhd"
+work	"mux2to1.vhd"
 work	"oscTop.vhd"
 work	"randgen.vhd"
 work	"sampler.vhd"
+work	"vga_ctrl.vhd"
