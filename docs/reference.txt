@@ -1,0 +1,7 @@
+Digilent Basys2 Board Reference Manual - VGA Port
+	http://hamsterworks.co.nz/mediawiki/images/1/17/Basys2_rm.pdf 
+	pages 8 - 10
+
+Hamsterworks FPGA Course - Module 11: Video Output
+	http://hamsterworks.co.nz/mediawiki/index.php/Module_11
+

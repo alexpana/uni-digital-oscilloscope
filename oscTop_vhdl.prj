@@ -1,0 +1,8 @@
+vhdl work "C:\Documents and Settings\21011253\Desktop\uni-digital-oscilloscope-master\import\oscilloscope\vga_ctrl.vhd"
+vhdl work "C:\Documents and Settings\21011253\Desktop\uni-digital-oscilloscope-master\import\oscilloscope\sampler.vhd"
+vhdl work "C:\Documents and Settings\21011253\Desktop\uni-digital-oscilloscope-master\import\oscilloscope\randgen.vhd"
+vhdl work "C:\Documents and Settings\21011253\Desktop\uni-digital-oscilloscope-master\import\oscilloscope\mux2to1.vhd"
+vhdl work "C:\Documents and Settings\21011253\Desktop\uni-digital-oscilloscope-master\import\oscilloscope\d_latch.vhd"
+vhdl work "C:\Documents and Settings\21011253\Desktop\uni-digital-oscilloscope-master\import\oscilloscope\comm.vhd"
+vhdl work "C:\Documents and Settings\21011253\Desktop\uni-digital-oscilloscope-master\import\oscilloscope\cmp.vhd"
+vhdl work "C:\Documents and Settings\21011253\Desktop\uni-digital-oscilloscope-master\import\oscilloscope\oscTop.vhd"

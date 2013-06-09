@@ -1,0 +1,39 @@
+# This file is a general .ucf for Basys2 rev C board
+# To use it in a project:
+# - remove or comment the lines corresponding to unused pins
+# - rename the used signals according to the project
+
+# clock pin for Basys2 Board
+# Bank = 0, Signal name = MCLK
+NET "clk" LOC = C9;
+
+# Pin assignment for SWs
+NET "sw[7]" LOC = L13;
+NET "sw[5]" LOC = L14;
+NET "sw[3]" LOC = H18;
+NET "sw[1]" LOC = N17;
+
+
+
+# Pin assignment for VGA
+# Bank = 1, Signal name = HSYNC
+NET "HSYNC" DRIVE = 2;
+NET "HSYNC" PULLUP;
+NET "HSYNC" LOC = F15;
+# Bank = 1, Signal name = VSYNC
+NET "VSYNC" DRIVE = 2;
+NET "VSYNC" PULLUP;
+NET "VSYNC" LOC = F14;
+
+NET "OutRed" DRIVE = 2;
+NET "OutRed" PULLUP;
+NET "OutRed" LOC = H14;
+
+NET "OutGreen" DRIVE = 2;
+NET "OutGreen" PULLUP;
+NET "OutGreen" LOC = H15;
+
+# Bank = 1, Signal name = BLU1 
+NET "OutBlue" DRIVE = 2;
+NET "OutBlue" PULLUP;
+NET "OutBlue" LOC = G15;

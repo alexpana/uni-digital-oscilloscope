@@ -1,0 +1,18 @@
+//! **************************************************************************
+// Written by: Map O.87xd on Fri Jun 07 15:33:29 2013
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "C9" LEVEL 1;
+COMP "OutBlue" LOCATE = SITE "G15" LEVEL 1;
+COMP "HSYNC" LOCATE = SITE "F15" LEVEL 1;
+COMP "VSYNC" LOCATE = SITE "F14" LEVEL 1;
+COMP "sw<1>" LOCATE = SITE "N17" LEVEL 1;
+COMP "sw<3>" LOCATE = SITE "H18" LEVEL 1;
+COMP "sw<5>" LOCATE = SITE "L14" LEVEL 1;
+COMP "sw<7>" LOCATE = SITE "L13" LEVEL 1;
+COMP "OutGreen" LOCATE = SITE "H15" LEVEL 1;
+COMP "OutRed" LOCATE = SITE "H14" LEVEL 1;
+NET "clk_BUFGP/IBUFG" BEL "clk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

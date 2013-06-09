@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Documents and Settings\21011253\Desktop\uni-digital-oscilloscope-master\import\oscilloscope\oscTop.ncd
+OUTFILE=C:\Documents and Settings\21011253\Desktop\uni-digital-oscilloscope-master\import\oscilloscope\oscTop.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=C:\Documents and Settings\21011253\Desktop\uni-digital-oscilloscope-master\import\oscilloscope
+LICENSE=ISE
+USER_INFO=174113422_174113423_174416753_760
