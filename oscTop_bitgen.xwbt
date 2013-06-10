@@ -1,8 +1,8 @@
 INTSTYLE=ise
-INFILE=C:\Documents and Settings\21011253\Desktop\uni-digital-oscilloscope-master\import\oscilloscope\oscTop.ncd
-OUTFILE=C:\Documents and Settings\21011253\Desktop\uni-digital-oscilloscope-master\import\oscilloscope\oscTop.bit
+INFILE=E:\SEM2\SSC\project-repo\uni-digital-oscilloscope\oscTop.ncd
+OUTFILE=E:\SEM2\SSC\project-repo\uni-digital-oscilloscope\oscTop.bit
 FAMILY=Spartan3E
-PART=xc3s500e-4fg320
-WORKINGDIR=C:\Documents and Settings\21011253\Desktop\uni-digital-oscilloscope-master\import\oscilloscope
-LICENSE=ISE
-USER_INFO=174113422_174113423_174416753_760
+PART=xc3s100e-4cp132
+WORKINGDIR=E:\SEM2\SSC\project-repo\uni-digital-oscilloscope
+LICENSE=WebPack
+USER_INFO=210742302_0_0_617

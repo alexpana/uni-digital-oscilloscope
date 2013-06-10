@@ -1,14 +1,14 @@
 --------------------------------------------------------------------------------
-Release 13.4 Trace  (nt)
-Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Release 14.4 Trace  (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-C:\Xilinx\13.4\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 4 -n
+C:\Xilinx\14.4\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 4 -n
 3 -fastpaths -xml oscTop.twx oscTop.ncd -o oscTop.twr oscTop.pcf -ucf
 basys2.ucf
 
 Design file:              oscTop.ncd
 Physical constraint file: oscTop.pcf
-Device,package,speed:     xc3s500e,fg320,-4 (PRODUCTION 1.27 2012-01-07)
+Device,package,speed:     xc3s100e,cp132,-4 (PRODUCTION 1.27 2012-12-04)
 Report level:             verbose report
 
 Environment Variable      Effect 
@@ -45,14 +45,14 @@ Setup/Hold to clock clk
             |Max Setup to|Max Hold to |                  | Clock  |
 Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------------+--------+
-sw<0>       |    4.710(R)|    1.178(R)|clk_BUFGP         |   0.000|
-sw<1>       |    5.431(R)|    1.290(R)|clk_BUFGP         |   0.000|
-sw<2>       |    5.575(R)|    0.543(R)|clk_BUFGP         |   0.000|
-sw<3>       |    5.993(R)|   -0.166(R)|clk_BUFGP         |   0.000|
-sw<4>       |    5.341(R)|    1.083(R)|clk_BUFGP         |   0.000|
-sw<5>       |    5.838(R)|    0.854(R)|clk_BUFGP         |   0.000|
-sw<6>       |    4.480(R)|    0.851(R)|clk_BUFGP         |   0.000|
-sw<7>       |    5.780(R)|    0.568(R)|clk_BUFGP         |   0.000|
+sw<0>       |    3.138(R)|   -1.131(R)|clk_BUFGP         |   0.000|
+sw<1>       |    4.552(R)|    0.832(R)|clk_BUFGP         |   0.000|
+sw<2>       |    4.021(R)|    0.941(R)|clk_BUFGP         |   0.000|
+sw<3>       |    4.810(R)|    0.403(R)|clk_BUFGP         |   0.000|
+sw<4>       |    3.738(R)|    0.406(R)|clk_BUFGP         |   0.000|
+sw<5>       |    4.209(R)|    0.584(R)|clk_BUFGP         |   0.000|
+sw<6>       |    4.056(R)|    0.606(R)|clk_BUFGP         |   0.000|
+sw<7>       |    5.079(R)|   -0.101(R)|clk_BUFGP         |   0.000|
 ------------+------------+------------+------------------+--------+
 
 Clock clk to Pad
@@ -60,11 +60,16 @@ Clock clk to Pad
             | clk (edge) |                  | Clock  |
 Destination |   to PAD   |Internal Clock(s) | Phase  |
 ------------+------------+------------------+--------+
-HSYNC       |   15.732(R)|clk_BUFGP         |   0.000|
-OutBlue     |   23.406(R)|clk_BUFGP         |   0.000|
-OutGreen    |   24.215(R)|clk_BUFGP         |   0.000|
-OutRed      |   23.404(R)|clk_BUFGP         |   0.000|
-VSYNC       |   15.933(R)|clk_BUFGP         |   0.000|
+HSYNC       |   13.770(R)|clk_BUFGP         |   0.000|
+OutBlue<0>  |   23.067(R)|clk_BUFGP         |   0.000|
+OutBlue<1>  |   23.319(R)|clk_BUFGP         |   0.000|
+OutGreen<0> |   22.556(R)|clk_BUFGP         |   0.000|
+OutGreen<1> |   22.808(R)|clk_BUFGP         |   0.000|
+OutGreen<2> |   22.813(R)|clk_BUFGP         |   0.000|
+OutRed<0>   |   22.293(R)|clk_BUFGP         |   0.000|
+OutRed<1>   |   22.293(R)|clk_BUFGP         |   0.000|
+OutRed<2>   |   22.289(R)|clk_BUFGP         |   0.000|
+VSYNC       |   14.427(R)|clk_BUFGP         |   0.000|
 ------------+------------+------------------+--------+
 
 Clock to Setup on destination clock clk
@@ -72,18 +77,18 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    7.021|         |         |         |
+clk            |    6.795|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Fri Jun 07 15:36:27 2013 
+Analysis completed Mon Jun 10 16:38:45 2013 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 107 MB
+Peak Memory Usage: 133 MB
 
 
 

@@ -37,7 +37,8 @@ entity sampler is
            freq : in  STD_LOGIC_VECTOR (15 downto 0);
            addr : in  STD_LOGIC_VECTOR (8 downto 0);
            data : out  STD_LOGIC_VECTOR (7 downto 0);
-           reqSample : out  STD_LOGIC);
+           reqSample : out  STD_LOGIC;
+			  workMode : in STD_LOGIC);
 end sampler;
 
 architecture Behavioral of sampler is
@@ -216,9 +217,11 @@ begin
 				reqSample <= '0';				
 				we <= '1';
 				
-				if sweeperIs511 = '1' then
+				if workMode = '1' then
 					nextState <= StartConversion;
-				else 
+				elsif sweeperIs511 = '1' then
+					nextState <= Idle;
+				else
 					nextState <= StartConversion;
 				end if;
 			when others =>				

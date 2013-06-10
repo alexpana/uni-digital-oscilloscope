@@ -1,16 +1,16 @@
-Release 13.4 - xst O.87xd (nt)
-Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Release 14.4 - xst P.49d (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.36 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.36 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
  
 --> Reading design: oscTop.prj
 
@@ -42,7 +42,7 @@ Ignore Synthesis Constraint File   : NO
 ---- Target Parameters
 Output File Name                   : "oscTop"
 Output Format                      : NGC
-Target Device                      : xc3s500e-4-fg320
+Target Device                      : xc3s100e-4-cp132
 
 ---- Source Options
 Top Module Name                    : oscTop
@@ -104,34 +104,41 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "C:/Documents and Settings/21011253/Desktop/uni-digital-oscilloscope-master/import/oscilloscope/comm.vhd" in Library work.
-Architecture behavioral of Entity comm is up to date.
-Compiling vhdl file "C:/Documents and Settings/21011253/Desktop/uni-digital-oscilloscope-master/import/oscilloscope/sampler.vhd" in Library work.
+Compiling vhdl file "E:/SEM2/SSC/project-repo/uni-digital-oscilloscope/comm.vhd" in Library work.
+Entity <comm> compiled.
+Entity <comm> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "E:/SEM2/SSC/project-repo/uni-digital-oscilloscope/sampler.vhd" in Library work.
 Entity <sampler> compiled.
-Entity <sampler> (Architecture <behavioral>) compiled.
-Compiling vhdl file "C:/Documents and Settings/21011253/Desktop/uni-digital-oscilloscope-master/import/oscilloscope/randgen.vhd" in Library work.
-Architecture behavioral of Entity randgen is up to date.
-Compiling vhdl file "C:/Documents and Settings/21011253/Desktop/uni-digital-oscilloscope-master/import/oscilloscope/vga_ctrl.vhd" in Library work.
-Architecture behavioral of Entity vga_ctrl is up to date.
-Compiling vhdl file "C:/Documents and Settings/21011253/Desktop/uni-digital-oscilloscope-master/import/oscilloscope/cmp.vhd" in Library work.
-Architecture behavioral of Entity cmp is up to date.
-Compiling vhdl file "C:/Documents and Settings/21011253/Desktop/uni-digital-oscilloscope-master/import/oscilloscope/mux2to1.vhd" in Library work.
-Architecture behavioral of Entity mux2to1 is up to date.
-Compiling vhdl file "C:/Documents and Settings/21011253/Desktop/uni-digital-oscilloscope-master/import/oscilloscope/d_latch.vhd" in Library work.
-Architecture behavioral of Entity d_latch is up to date.
-Compiling vhdl file "C:/Documents and Settings/21011253/Desktop/uni-digital-oscilloscope-master/import/oscilloscope/oscTop.vhd" in Library work.
-Architecture behavioral of Entity osctop is up to date.
+Entity <sampler> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "E:/SEM2/SSC/project-repo/uni-digital-oscilloscope/randgen.vhd" in Library work.
+Entity <randgen> compiled.
+Entity <randgen> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "E:/SEM2/SSC/project-repo/uni-digital-oscilloscope/vga_ctrl.vhd" in Library work.
+Entity <vga_ctrl> compiled.
+Entity <vga_ctrl> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "E:/SEM2/SSC/project-repo/uni-digital-oscilloscope/cmp.vhd" in Library work.
+Entity <cmp> compiled.
+Entity <cmp> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "E:/SEM2/SSC/project-repo/uni-digital-oscilloscope/mux2to1.vhd" in Library work.
+Entity <mux2to1> compiled.
+Entity <mux2to1> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "E:/SEM2/SSC/project-repo/uni-digital-oscilloscope/d_latch.vhd" in Library work.
+Entity <d_latch> compiled.
+Entity <d_latch> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "E:/SEM2/SSC/project-repo/uni-digital-oscilloscope/oscTop.vhd" in Library work.
+Entity <oscTop> compiled.
+Entity <oscTop> (Architecture <Behavioral>) compiled.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
 =========================================================================
-Analyzing hierarchy for entity <oscTop> in library <work> (architecture <behavioral>).
+Analyzing hierarchy for entity <oscTop> in library <work> (architecture <Behavioral>).
 
-Analyzing hierarchy for entity <comm> in library <work> (architecture <behavioral>).
+Analyzing hierarchy for entity <comm> in library <work> (architecture <Behavioral>).
 
-Analyzing hierarchy for entity <sampler> in library <work> (architecture <behavioral>).
+Analyzing hierarchy for entity <sampler> in library <work> (architecture <Behavioral>).
 
-Analyzing hierarchy for entity <randgen> in library <work> (architecture <behavioral>).
+Analyzing hierarchy for entity <randgen> in library <work> (architecture <Behavioral>).
 
 Analyzing hierarchy for entity <vga_ctrl> in library <work> (architecture <Behavioral>).
 
@@ -146,16 +153,18 @@ Analyzing hierarchy for entity <d_latch> in library <work> (architecture <Behavi
 =========================================================================
 *                            HDL Analysis                               *
 =========================================================================
-Analyzing Entity <oscTop> in library <work> (Architecture <behavioral>).
+Analyzing Entity <oscTop> in library <work> (Architecture <Behavioral>).
 Entity <oscTop> analyzed. Unit <oscTop> generated.
 
-Analyzing Entity <comm> in library <work> (Architecture <behavioral>).
+Analyzing Entity <comm> in library <work> (Architecture <Behavioral>).
 Entity <comm> analyzed. Unit <comm> generated.
 
-Analyzing Entity <sampler> in library <work> (Architecture <behavioral>).
+Analyzing Entity <sampler> in library <work> (Architecture <Behavioral>).
+WARNING:Xst:819 - "E:/SEM2/SSC/project-repo/uni-digital-oscilloscope/sampler.vhd" line 158: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <workMode>
 Entity <sampler> analyzed. Unit <sampler> generated.
 
-Analyzing Entity <randgen> in library <work> (Architecture <behavioral>).
+Analyzing Entity <randgen> in library <work> (Architecture <Behavioral>).
 Entity <randgen> analyzed. Unit <randgen> generated.
 
 Analyzing Entity <vga_ctrl> in library <work> (Architecture <Behavioral>).
@@ -179,7 +188,7 @@ Entity <d_latch> analyzed. Unit <d_latch> generated.
 Performing bidirectional port resolution...
 
 Synthesizing Unit <comm>.
-    Related source file is "C:/Documents and Settings/21011253/Desktop/uni-digital-oscilloscope-master/import/oscilloscope/comm.vhd".
+    Related source file is "E:/SEM2/SSC/project-repo/uni-digital-oscilloscope/comm.vhd".
     Found finite state machine <FSM_0> for signal <currentState>.
     -----------------------------------------------------------------------
     | States             | 8                                              |
@@ -210,14 +219,13 @@ Unit <comm> synthesized.
 
 
 Synthesizing Unit <sampler>.
-    Related source file is "C:/Documents and Settings/21011253/Desktop/uni-digital-oscilloscope-master/import/oscilloscope/sampler.vhd".
-WARNING:Xst:646 - Signal <sweeperIs511> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Related source file is "E:/SEM2/SSC/project-repo/uni-digital-oscilloscope/sampler.vhd".
     Found 512x8-bit dual-port RAM <Mram_ramMemory> for signal <ramMemory>.
     Found finite state machine <FSM_1> for signal <currentState>.
     -----------------------------------------------------------------------
     | States             | 6                                              |
-    | Transitions        | 9                                              |
-    | Inputs             | 3                                              |
+    | Transitions        | 11                                             |
+    | Inputs             | 5                                              |
     | Outputs            | 7                                              |
     | Clock              | clk                       (rising_edge)        |
     | Power Up State     | idle                                           |
@@ -230,13 +238,13 @@ INFO:Xst:2117 - HDL ADVISOR - Mux Selector <selFreqsw> of Case statement line 0 
    	- use the attribute 'signal_encoding user' to avoid onehot optimization
    	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
     Using one-hot encoding for signal <selFreqsw>.
-    Found 16-bit comparator equal for signal <currentState$cmp_eq0000> created at line 207.
-    Found 16-bit comparator equal for signal <diffSignal$cmp_eq0000> created at line 148.
+    Found 16-bit comparator equal for signal <currentState$cmp_eq0000> created at line 208.
+    Found 16-bit comparator equal for signal <diffSignal$cmp_eq0000> created at line 149.
     Found 16-bit register for signal <freqsw>.
-    Found 16-bit adder for signal <freqsw$addsub0000> created at line 109.
+    Found 16-bit adder for signal <freqsw$addsub0000> created at line 110.
     Found 16-bit register for signal <prevFreq>.
     Found 9-bit register for signal <sweeper>.
-    Found 9-bit adder for signal <sweeper$addsub0000> created at line 90.
+    Found 9-bit adder for signal <sweeper$addsub0000> created at line 91.
     Summary:
 	inferred   1 Finite State Machine(s).
 	inferred   1 RAM(s).
@@ -247,7 +255,7 @@ Unit <sampler> synthesized.
 
 
 Synthesizing Unit <randgen>.
-    Related source file is "C:/Documents and Settings/21011253/Desktop/uni-digital-oscilloscope-master/import/oscilloscope/randgen.vhd".
+    Related source file is "E:/SEM2/SSC/project-repo/uni-digital-oscilloscope/randgen.vhd".
 WARNING:Xst:647 - Input <startBit> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found finite state machine <FSM_2> for signal <currentState>.
     -----------------------------------------------------------------------
@@ -277,7 +285,7 @@ Unit <randgen> synthesized.
 
 
 Synthesizing Unit <vga_ctrl>.
-    Related source file is "C:/Documents and Settings/21011253/Desktop/uni-digital-oscilloscope-master/import/oscilloscope/vga_ctrl.vhd".
+    Related source file is "E:/SEM2/SSC/project-repo/uni-digital-oscilloscope/vga_ctrl.vhd".
     Found 11-bit comparator less for signal <CE$cmp_lt0000> created at line 76.
     Found 11-bit comparator less for signal <CE$cmp_lt0001> created at line 76.
     Found 1-bit register for signal <clk25Hz>.
@@ -295,7 +303,7 @@ Unit <vga_ctrl> synthesized.
 
 
 Synthesizing Unit <cmp>.
-    Related source file is "C:/Documents and Settings/21011253/Desktop/uni-digital-oscilloscope-master/import/oscilloscope/cmp.vhd".
+    Related source file is "E:/SEM2/SSC/project-repo/uni-digital-oscilloscope/cmp.vhd".
     Found 1-bit xor2 for signal <equal$xor0000> created at line 18.
     Found 1-bit xor2 for signal <equal$xor0001> created at line 18.
     Found 1-bit xor2 for signal <equal$xor0002> created at line 18.
@@ -312,12 +320,12 @@ Unit <cmp> synthesized.
 
 
 Synthesizing Unit <mux2to1>.
-    Related source file is "C:/Documents and Settings/21011253/Desktop/uni-digital-oscilloscope-master/import/oscilloscope/mux2to1.vhd".
+    Related source file is "E:/SEM2/SSC/project-repo/uni-digital-oscilloscope/mux2to1.vhd".
 Unit <mux2to1> synthesized.
 
 
 Synthesizing Unit <d_latch>.
-    Related source file is "C:/Documents and Settings/21011253/Desktop/uni-digital-oscilloscope-master/import/oscilloscope/d_latch.vhd".
+    Related source file is "E:/SEM2/SSC/project-repo/uni-digital-oscilloscope/d_latch.vhd".
     Found 9-bit register for signal <S>.
     Summary:
 	inferred   9 D-type flip-flop(s).
@@ -325,16 +333,13 @@ Unit <d_latch> synthesized.
 
 
 Synthesizing Unit <oscTop>.
-    Related source file is "C:/Documents and Settings/21011253/Desktop/uni-digital-oscilloscope-master/import/oscilloscope/oscTop.vhd".
+    Related source file is "E:/SEM2/SSC/project-repo/uni-digital-oscilloscope/oscTop.vhd".
 WARNING:Xst:646 - Signal <tmp> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <sx<9>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:653 - Signal <ssample<8>> is used but never assigned. This sourceless signal will be automatically connected to value 0.
 WARNING:Xst:1780 - Signal <en> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1780 - Signal <data> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <correctedSy<9>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:646 - Signal <color2<6:5>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:646 - Signal <color2<3:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:646 - Signal <color2<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <cmp_eq_1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1780 - Signal <addr> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
     Found 10-bit adder for signal <correctedSy>.
@@ -420,6 +425,7 @@ WARNING:Xst:1293 - FF/Latch <prevFreq_0> has a constant value of 0 in block <fpg
 WARNING:Xst:1293 - FF/Latch <prevFreq_1> has a constant value of 0 in block <fpga_sampler>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <prevFreq_2> has a constant value of 0 in block <fpga_sampler>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <prevFreq_3> has a constant value of 0 in block <fpga_sampler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <prevFreq_4> has a constant value of 0 in block <fpga_sampler>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <prevFreq_12> has a constant value of 0 in block <fpga_sampler>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <prevFreq_13> has a constant value of 0 in block <fpga_sampler>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <prevFreq_14> has a constant value of 0 in block <fpga_sampler>. This FF/Latch will be trimmed during the optimization process.
@@ -476,7 +482,7 @@ Macro Statistics
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-INFO:Xst:2261 - The FF/Latch <prevFreq_0> in Unit <sampler> is equivalent to the following 7 FFs/Latches, which will be removed : <prevFreq_1> <prevFreq_2> <prevFreq_3> <prevFreq_12> <prevFreq_13> <prevFreq_14> <prevFreq_15> 
+INFO:Xst:2261 - The FF/Latch <prevFreq_0> in Unit <sampler> is equivalent to the following 8 FFs/Latches, which will be removed : <prevFreq_1> <prevFreq_2> <prevFreq_3> <prevFreq_4> <prevFreq_12> <prevFreq_13> <prevFreq_14> <prevFreq_15> 
 WARNING:Xst:1293 - FF/Latch <prevFreq_0> has a constant value of 0 in block <sampler>. This FF/Latch will be trimmed during the optimization process.
 
 Optimizing unit <oscTop> ...
@@ -497,7 +503,7 @@ WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <D2/S_8> (without in
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block oscTop, actual ratio is 4.
+Found area constraint ratio of 100 (+ 5) on block oscTop, actual ratio is 22.
 FlipFlop C_VGA_CTRL/hcounter_5 has been replicated 1 time(s)
 FlipFlop C_VGA_CTRL/hcounter_6 has been replicated 1 time(s)
 
@@ -512,8 +518,8 @@ Unit <oscTop> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 112
- Flip-Flops                                            : 112
+# Registers                                            : 111
+ Flip-Flops                                            : 111
 # Shift Registers                                      : 2
  5-bit shift register                                  : 1
  9-bit shift register                                  : 1
@@ -542,35 +548,35 @@ Optimization Goal                  : Speed
 Keep Hierarchy                     : No
 
 Design Statistics
-# IOs                              : 14
+# IOs                              : 19
 
 Cell Usage :
-# BELS                             : 610
+# BELS                             : 616
 #      GND                         : 1
-#      INV                         : 12
+#      INV                         : 14
 #      LUT1                        : 44
 #      LUT2                        : 29
 #      LUT2_D                      : 1
 #      LUT2_L                      : 1
 #      LUT3                        : 158
-#      LUT3_L                      : 2
-#      LUT4                        : 89
+#      LUT3_L                      : 1
+#      LUT4                        : 93
 #      LUT4_D                      : 17
-#      LUT4_L                      : 4
-#      MUXCY                       : 73
-#      MUXF5                       : 68
+#      LUT4_L                      : 3
+#      MUXCY                       : 74
+#      MUXF5                       : 69
 #      MUXF6                       : 32
 #      MUXF7                       : 16
 #      MUXF8                       : 8
 #      VCC                         : 1
 #      XORCY                       : 54
-# FlipFlops/Latches                : 114
+# FlipFlops/Latches                : 113
 #      FD                          : 47
 #      FDE                         : 8
 #      FDR                         : 3
 #      FDRE                        : 38
 #      FDRS                        : 1
-#      FDS                         : 15
+#      FDS                         : 14
 #      FDSE                        : 2
 # RAMS                             : 256
 #      RAM16X1D                    : 256
@@ -578,24 +584,24 @@ Cell Usage :
 #      SRL16                       : 2
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 13
+# IO Buffers                       : 18
 #      IBUF                        : 8
-#      OBUF                        : 5
+#      OBUF                        : 10
 =========================================================================
 
 Device utilization summary:
 ---------------------------
 
-Selected Device : 3s500efg320-4 
+Selected Device : 3s100ecp132-4 
 
- Number of Slices:                      197  out of   4656     4%  
- Number of Slice Flip Flops:            114  out of   9312     1%  
- Number of 4 input LUTs:                871  out of   9312     9%  
-    Number used as logic:               357
+ Number of Slices:                      200  out of    960    20%  
+ Number of Slice Flip Flops:            113  out of   1920     5%  
+ Number of 4 input LUTs:                875  out of   1920    45%  
+    Number used as logic:               361
     Number used as Shift registers:       2
     Number used as RAMs:                512
- Number of IOs:                          14
- Number of bonded IOBs:                  14  out of    232     6%  
+ Number of IOs:                          19
+ Number of bonded IOBs:                  19  out of     83    22%  
  Number of GCLKs:                         1  out of     24     4%  
 
 ---------------------------
@@ -619,7 +625,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-clk                                | BUFGP                  | 372   |
+clk                                | BUFGP                  | 371   |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -631,8 +637,8 @@ Timing Summary:
 Speed Grade: -4
 
    Minimum period: 7.570ns (Maximum Frequency: 132.108MHz)
-   Minimum input arrival time before clock: 6.063ns
-   Maximum output required time after clock: 13.340ns
+   Minimum input arrival time before clock: 5.483ns
+   Maximum output required time after clock: 13.566ns
    Maximum combinational path delay: No path found
 
 Timing Detail:
@@ -642,7 +648,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
   Clock period: 7.570ns (frequency: 132.108MHz)
-  Total number of paths / destination ports: 6752 / 2741
+  Total number of paths / destination ports: 6770 / 2740
 -------------------------------------------------------------------------
 Delay:               7.570ns (Levels of Logic = 3)
   Source:            C_VGA_CTRL/hcounter_1 (FF)
@@ -665,44 +671,41 @@ Delay:               7.570ns (Levels of Logic = 3)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 24 / 10
+  Total number of paths / destination ports: 23 / 10
 -------------------------------------------------------------------------
-Offset:              6.063ns (Levels of Logic = 7)
-  Source:            sw<0> (PAD)
+Offset:              5.483ns (Levels of Logic = 4)
+  Source:            sw<4> (PAD)
   Destination:       fpga_sampler/currentState_FSM_FFd3 (FF)
   Destination Clock: clk rising
 
-  Data Path: sw<0> to fpga_sampler/currentState_FSM_FFd3
+  Data Path: sw<4> to fpga_sampler/currentState_FSM_FFd3
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             3   1.218   0.610  sw_0_IBUF (sw_0_IBUF)
-     LUT4:I1->O            1   0.704   0.000  fpga_sampler/Mcompar_currentState_cmp_eq0000_lut<2> (fpga_sampler/Mcompar_currentState_cmp_eq0000_lut<2>)
-     MUXCY:S->O            1   0.464   0.000  fpga_sampler/Mcompar_currentState_cmp_eq0000_cy<2> (fpga_sampler/Mcompar_currentState_cmp_eq0000_cy<2>)
-     MUXCY:CI->O           1   0.059   0.000  fpga_sampler/Mcompar_currentState_cmp_eq0000_cy<3> (fpga_sampler/Mcompar_currentState_cmp_eq0000_cy<3>)
-     MUXCY:CI->O           1   0.059   0.000  fpga_sampler/Mcompar_currentState_cmp_eq0000_cy<4> (fpga_sampler/Mcompar_currentState_cmp_eq0000_cy<4>)
-     MUXCY:CI->O           1   0.459   0.455  fpga_sampler/Mcompar_currentState_cmp_eq0000_cy<5> (fpga_sampler/Mcompar_currentState_cmp_eq0000_cy<5>)
-     LUT3:I2->O            1   0.704   0.420  fpga_sampler/currentState_FSM_FFd3-In2 (fpga_sampler/currentState_FSM_FFd3-In2)
+     IBUF:I->O             3   1.218   0.610  sw_4_IBUF (sw_4_IBUF)
+     LUT4:I1->O            1   0.704   0.595  fpga_sampler/currentState_FSM_FFd3-In102 (fpga_sampler/currentState_FSM_FFd3-In102)
+     LUT4:I0->O            1   0.704   0.000  fpga_sampler/currentState_FSM_FFd3-In1562 (fpga_sampler/currentState_FSM_FFd3-In1562)
+     MUXF5:I0->O           1   0.321   0.420  fpga_sampler/currentState_FSM_FFd3-In156_f5 (fpga_sampler/currentState_FSM_FFd3-In156)
      FDS:S                     0.911          fpga_sampler/currentState_FSM_FFd3
     ----------------------------------------
-    Total                      6.063ns (4.578ns logic, 1.485ns route)
-                                       (75.5% logic, 24.5% route)
+    Total                      5.483ns (3.858ns logic, 1.625ns route)
+                                       (70.4% logic, 29.6% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 9684 / 5
+  Total number of paths / destination ports: 25799 / 10
 -------------------------------------------------------------------------
-Offset:              13.340ns (Levels of Logic = 18)
-  Source:            C_VGA_CTRL/hcounter_2 (FF)
-  Destination:       OutBlue (PAD)
+Offset:              13.566ns (Levels of Logic = 18)
+  Source:            C_VGA_CTRL/hcounter_3 (FF)
+  Destination:       OutBlue<1> (PAD)
   Source Clock:      clk rising
 
-  Data Path: C_VGA_CTRL/hcounter_2 to OutBlue
+  Data Path: C_VGA_CTRL/hcounter_3 to OutBlue<1>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRE:C->Q           258   0.591   1.334  C_VGA_CTRL/hcounter_2 (C_VGA_CTRL/hcounter_2)
-     RAM16X1D:DPRA2->DPO    1   0.704   0.499  fpga_sampler/Mram_ramMemory1 (fpga_sampler/N35)
+     FDRE:C->Q           258   0.591   1.334  C_VGA_CTRL/hcounter_3 (C_VGA_CTRL/hcounter_3)
+     RAM16X1D:DPRA3->DPO    1   0.704   0.499  fpga_sampler/Mram_ramMemory1 (fpga_sampler/N35)
      LUT3:I1->O            1   0.704   0.000  fpga_sampler/inst_LPM_MUX_10 (fpga_sampler/inst_LPM_MUX_10)
      MUXF5:I0->O           1   0.321   0.000  fpga_sampler/inst_LPM_MUX_8_f5 (fpga_sampler/inst_LPM_MUX_8_f5)
      MUXF6:I0->O           1   0.521   0.000  fpga_sampler/inst_LPM_MUX_6_f6 (fpga_sampler/inst_LPM_MUX_6_f6)
@@ -718,23 +721,23 @@ Offset:              13.340ns (Levels of Logic = 18)
      MUXCY:CI->O           1   0.059   0.000  C_CMP1/Mcompar_less_cmp_lt0000_cy<6> (C_CMP1/Mcompar_less_cmp_lt0000_cy<6>)
      MUXCY:CI->O           1   0.059   0.000  C_CMP1/Mcompar_less_cmp_lt0000_cy<7> (C_CMP1/Mcompar_less_cmp_lt0000_cy<7>)
      MUXCY:CI->O           1   0.459   0.455  C_CMP1/Mcompar_less_cmp_lt0000_cy<8> (C_CMP1/Mcompar_less_cmp_lt0000_cy<8>)
-     LUT4:I2->O            3   0.704   0.531  OutGreen237 (OutGreen_OBUF)
-     OBUF:I->O                 3.272          OutBlue_OBUF (OutBlue)
+     LUT4:I2->O            8   0.704   0.757  OutBlue<1>237 (OutBlue_1_OBUF)
+     OBUF:I->O                 3.272          OutBlue_1_OBUF (OutBlue<1>)
     ----------------------------------------
-    Total                     13.340ns (9.899ns logic, 3.441ns route)
-                                       (74.2% logic, 25.8% route)
+    Total                     13.566ns (9.899ns logic, 3.667ns route)
+                                       (73.0% logic, 27.0% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 12.00 secs
-Total CPU time to Xst completion: 11.91 secs
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 8.44 secs
  
 --> 
 
-Total memory usage is 161136 kilobytes
+Total memory usage is 220700 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   26 (   0 filtered)
+Number of warnings :   24 (   0 filtered)
 Number of infos    :    5 (   0 filtered)
 

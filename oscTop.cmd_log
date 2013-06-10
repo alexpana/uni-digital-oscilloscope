@@ -1,30 +1,7 @@
-xst -intstyle ise -ifn "C:/Documents and Settings/21011253/Desktop/uni-digital-oscilloscope-master/import/oscilloscope/oscTop.xst" -ofn "C:/Documents and Settings/21011253/Desktop/uni-digital-oscilloscope-master/import/oscilloscope/oscTop.syr" 
-xst -intstyle ise -ifn "C:/Documents and Settings/21011253/Desktop/uni-digital-oscilloscope-master/import/oscilloscope/oscTop.xst" -ofn "C:/Documents and Settings/21011253/Desktop/uni-digital-oscilloscope-master/import/oscilloscope/oscTop.syr" 
-ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc basys2.ucf -p xc3s500e-fg320-4 "oscTop.ngc" oscTop.ngd  
-ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc basys2.ucf -p xc3s500e-fg320-4 "oscTop.ngc" oscTop.ngd  
-map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o oscTop_map.ncd oscTop.ngd oscTop.pcf 
+xst -intstyle ise -ifn "E:/SEM2/SSC/project-repo/uni-digital-oscilloscope/oscTop.xst" -ofn "E:/SEM2/SSC/project-repo/uni-digital-oscilloscope/oscTop.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc basys2.ucf -p xc3s100e-cp132-4 oscTop.ngc oscTop.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o oscTop_map.ncd oscTop.ngd oscTop.pcf 
 par -w -intstyle ise -ol high -t 1 oscTop_map.ncd oscTop.ncd oscTop.pcf 
 trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml oscTop.twx oscTop.ncd -o oscTop.twr oscTop.pcf -ucf basys2.ucf 
 bitgen -intstyle ise -f oscTop.ut oscTop.ncd 
-xst -intstyle ise -ifn "C:/Documents and Settings/21011253/Desktop/uni-digital-oscilloscope-master/import/oscilloscope/oscTop.xst" -ofn "C:/Documents and Settings/21011253/Desktop/uni-digital-oscilloscope-master/import/oscilloscope/oscTop.syr" 
-xst -intstyle ise -ifn "C:/Documents and Settings/21011253/Desktop/uni-digital-oscilloscope-master/import/oscilloscope/oscTop.xst" -ofn "C:/Documents and Settings/21011253/Desktop/uni-digital-oscilloscope-master/import/oscilloscope/oscTop.syr" 
-ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc basys2.ucf -p xc3s500e-fg320-4 "oscTop.ngc" oscTop.ngd  
-xst -intstyle ise -ifn "C:/Documents and Settings/21011253/Desktop/uni-digital-oscilloscope-master/import/oscilloscope/oscTop.xst" -ofn "C:/Documents and Settings/21011253/Desktop/uni-digital-oscilloscope-master/import/oscilloscope/oscTop.syr" 
-xst -intstyle ise -ifn "C:/Documents and Settings/21011253/Desktop/uni-digital-oscilloscope-master/import/oscilloscope/oscTop.xst" -ofn "C:/Documents and Settings/21011253/Desktop/uni-digital-oscilloscope-master/import/oscilloscope/oscTop.syr" 
-ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc basys2.ucf -p xc3s500e-fg320-4 "oscTop.ngc" oscTop.ngd  
-map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o oscTop_map.ncd oscTop.ngd oscTop.pcf 
-par -w -intstyle ise -ol high -t 1 oscTop_map.ncd oscTop.ncd oscTop.pcf 
-trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml oscTop.twx oscTop.ncd -o oscTop.twr oscTop.pcf -ucf basys2.ucf 
-bitgen -intstyle ise -f oscTop.ut oscTop.ncd 
-xst -intstyle ise -ifn "C:/Documents and Settings/21011253/Desktop/uni-digital-oscilloscope-master/import/oscilloscope/oscTop.xst" -ofn "C:/Documents and Settings/21011253/Desktop/uni-digital-oscilloscope-master/import/oscilloscope/oscTop.syr" 
-ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc basys2.ucf -p xc3s500e-fg320-4 "oscTop.ngc" oscTop.ngd  
-map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o oscTop_map.ncd oscTop.ngd oscTop.pcf 
-par -w -intstyle ise -ol high -t 1 oscTop_map.ncd oscTop.ncd oscTop.pcf 
-trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml oscTop.twx oscTop.ncd -o oscTop.twr oscTop.pcf -ucf basys2.ucf 
-bitgen -intstyle ise -f oscTop.ut oscTop.ncd 
-xst -intstyle ise -ifn "C:/Documents and Settings/21011253/Desktop/uni-digital-oscilloscope-master/import/oscilloscope/oscTop.xst" -ofn "C:/Documents and Settings/21011253/Desktop/uni-digital-oscilloscope-master/import/oscilloscope/oscTop.syr" 
-ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc basys2.ucf -p xc3s500e-fg320-4 "oscTop.ngc" oscTop.ngd  
-map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o oscTop_map.ncd oscTop.ngd oscTop.pcf 
-par -w -intstyle ise -ol high -t 1 oscTop_map.ncd oscTop.ncd oscTop.pcf 
-trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml oscTop.twx oscTop.ncd -o oscTop.twr oscTop.pcf -ucf basys2.ucf 
 bitgen -intstyle ise -f oscTop.ut oscTop.ncd 

@@ -9,9 +9,9 @@ entity oscTop is
 					
 					HSYNC:		out STD_LOGIC;
 					VSYNC:		out STD_LOGIC;
-					OutRed: 		out STD_LOGIC;
-					OutGreen: 	out STD_LOGIC;
-					OutBlue: 	out STD_LOGIC
+					OutRed: 		out STD_LOGIC_VECTOR(2 downto 0);
+					OutGreen: 	out STD_LOGIC_VECTOR(2 downto 0);
+					OutBlue: 	out STD_LOGIC_VECTOR(1 downto 0)
 				);
 end oscTop;
 
@@ -24,7 +24,8 @@ architecture Behavioral of oscTop is
            freq : in  STD_LOGIC_VECTOR (15 downto 0);
            addr : in  STD_LOGIC_VECTOR (8 downto 0);
            data : out  STD_LOGIC_VECTOR (7 downto 0);
-           reqSample : out  STD_LOGIC);
+           reqSample : out  STD_LOGIC;
+			  workMode : in STD_LOGIC);
 	end component;
 	
 	
@@ -78,7 +79,8 @@ architecture Behavioral of oscTop is
 		
 begin
 
-	freq <= "0000" & sw & "0000";	
+	freq <= "0000" & sw(7 downto 1) & "00000";	
+	
 	
 	cerebot_comm : comm port map (
 			reqSample => reqSample,
@@ -99,7 +101,8 @@ begin
 			freq => freq,
 			addr => sx(8 downto 0),
 			data => ssample(7 downto 0),
-			reqSample => reqSample
+			reqSample => reqSample,
+			workMode => sw(0)
 		);
 		
 		
@@ -136,9 +139,9 @@ begin
 
 	sel <= cmp_eq_0 or ( cmp_less_1 and (not cmp_less_0) ) or ( cmp_less_0 and (not cmp_less_1) );
 					
-	OutRed <= color2( 7  );
-	OutGreen <= color2( 4 );
-	OutBlue <= color2( 1  );
+	OutRed <= color2( 7  downto 5);
+	OutGreen <= color2( 4 downto 2);
+	OutBlue <= color2( 1  downto 0);
 
 	correctedSy <= 320 - sy;
 

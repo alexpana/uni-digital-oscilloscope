@@ -47,7 +47,8 @@
 \contentsline {paragraph}{}{15}{section*.37}
 \contentsline {paragraph}{}{15}{section*.38}
 \contentsline {section}{\numberline {5}Rezultate experimentale}{17}{section.5}
+\contentsline {paragraph}{}{18}{figure.17}
 \contentsline {section}{\numberline {6}Concluzii}{18}{section.6}
-\contentsline {paragraph}{}{18}{section*.39}
 \contentsline {paragraph}{}{18}{section*.40}
 \contentsline {paragraph}{}{18}{section*.41}
+\contentsline {paragraph}{}{18}{section*.42}

@@ -1,0 +1,56 @@
+V3 31
+FL E:/SEM2/SSC/project-repo/uni-digital-oscilloscope/cmp.vhd 2013/06/09.13:21:14 P.49d
+EN work/cmp 1370871253 \
+      FL E:/SEM2/SSC/project-repo/uni-digital-oscilloscope/cmp.vhd \
+      PB ieee/std_logic_1164 1354696159
+AR work/cmp/Behavioral 1370871254 \
+      FL E:/SEM2/SSC/project-repo/uni-digital-oscilloscope/cmp.vhd EN work/cmp 1370871253
+FL E:/SEM2/SSC/project-repo/uni-digital-oscilloscope/comm.vhd 2013/06/09.13:21:14 P.49d
+EN work/comm 1370871245 \
+      FL E:/SEM2/SSC/project-repo/uni-digital-oscilloscope/comm.vhd \
+      PB ieee/std_logic_1164 1354696159 PB ieee/STD_LOGIC_UNSIGNED 1354696162
+AR work/comm/Behavioral 1370871246 \
+      FL E:/SEM2/SSC/project-repo/uni-digital-oscilloscope/comm.vhd EN work/comm 1370871245
+FL E:/SEM2/SSC/project-repo/uni-digital-oscilloscope/d_latch.vhd 2013/06/09.13:21:14 P.49d
+EN work/d_latch 1370871257 \
+      FL E:/SEM2/SSC/project-repo/uni-digital-oscilloscope/d_latch.vhd \
+      PB ieee/std_logic_1164 1354696159
+AR work/d_latch/Behavioral 1370871258 \
+      FL E:/SEM2/SSC/project-repo/uni-digital-oscilloscope/d_latch.vhd \
+      EN work/d_latch 1370871257
+FL E:/SEM2/SSC/project-repo/uni-digital-oscilloscope/mux2to1.vhd 2013/06/07.10:07:45 P.49d
+EN work/mux2to1 1370871255 \
+      FL E:/SEM2/SSC/project-repo/uni-digital-oscilloscope/mux2to1.vhd \
+      PB ieee/std_logic_1164 1354696159
+AR work/mux2to1/Behavioral 1370871256 \
+      FL E:/SEM2/SSC/project-repo/uni-digital-oscilloscope/mux2to1.vhd \
+      EN work/mux2to1 1370871255
+FL E:/SEM2/SSC/project-repo/uni-digital-oscilloscope/oscTop.vhd 2013/06/10.16:28:07 P.49d
+EN work/oscTop 1370871259 \
+      FL E:/SEM2/SSC/project-repo/uni-digital-oscilloscope/oscTop.vhd \
+      PB ieee/std_logic_1164 1354696159 PB ieee/STD_LOGIC_UNSIGNED 1354696162
+AR work/oscTop/Behavioral 1370871260 \
+      FL E:/SEM2/SSC/project-repo/uni-digital-oscilloscope/oscTop.vhd \
+      EN work/oscTop 1370871259 CP comm CP sampler CP randgen CP work/vga_ctrl \
+      CP work/cmp CP work/mux2to1 CP work/d_latch
+FL E:/SEM2/SSC/project-repo/uni-digital-oscilloscope/randgen.vhd 2013/06/09.13:21:14 P.49d
+EN work/randgen 1370871249 \
+      FL E:/SEM2/SSC/project-repo/uni-digital-oscilloscope/randgen.vhd \
+      PB ieee/std_logic_1164 1354696159 PB ieee/STD_LOGIC_UNSIGNED 1354696162
+AR work/randgen/Behavioral 1370871250 \
+      FL E:/SEM2/SSC/project-repo/uni-digital-oscilloscope/randgen.vhd \
+      EN work/randgen 1370871249
+FL E:/SEM2/SSC/project-repo/uni-digital-oscilloscope/sampler.vhd 2013/06/10.16:33:54 P.49d
+EN work/sampler 1370871247 \
+      FL E:/SEM2/SSC/project-repo/uni-digital-oscilloscope/sampler.vhd \
+      PB ieee/std_logic_1164 1354696159 PB ieee/STD_LOGIC_UNSIGNED 1354696162
+AR work/sampler/Behavioral 1370871248 \
+      FL E:/SEM2/SSC/project-repo/uni-digital-oscilloscope/sampler.vhd \
+      EN work/sampler 1370871247
+FL E:/SEM2/SSC/project-repo/uni-digital-oscilloscope/vga_ctrl.vhd 2013/06/07.10:07:45 P.49d
+EN work/vga_ctrl 1370871251 \
+      FL E:/SEM2/SSC/project-repo/uni-digital-oscilloscope/vga_ctrl.vhd \
+      PB ieee/std_logic_1164 1354696159 PB ieee/STD_LOGIC_UNSIGNED 1354696162
+AR work/vga_ctrl/Behavioral 1370871252 \
+      FL E:/SEM2/SSC/project-repo/uni-digital-oscilloscope/vga_ctrl.vhd \
+      EN work/vga_ctrl 1370871251

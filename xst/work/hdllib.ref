@@ -1,0 +1,16 @@
+EN mux2to1 NULL E:/SEM2/SSC/project-repo/uni-digital-oscilloscope/mux2to1.vhd sub00/vhpl10 1370871255
+AR comm behavioral E:/SEM2/SSC/project-repo/uni-digital-oscilloscope/comm.vhd sub00/vhpl01 1370871246
+EN vga_ctrl NULL E:/SEM2/SSC/project-repo/uni-digital-oscilloscope/vga_ctrl.vhd sub00/vhpl06 1370871251
+AR osctop behavioral E:/SEM2/SSC/project-repo/uni-digital-oscilloscope/oscTop.vhd sub00/vhpl15 1370871260
+EN cmp NULL E:/SEM2/SSC/project-repo/uni-digital-oscilloscope/cmp.vhd sub00/vhpl08 1370871253
+EN osctop NULL E:/SEM2/SSC/project-repo/uni-digital-oscilloscope/oscTop.vhd sub00/vhpl14 1370871259
+EN randgen NULL E:/SEM2/SSC/project-repo/uni-digital-oscilloscope/randgen.vhd sub00/vhpl04 1370871249
+AR mux2to1 behavioral E:/SEM2/SSC/project-repo/uni-digital-oscilloscope/mux2to1.vhd sub00/vhpl11 1370871256
+AR cmp behavioral E:/SEM2/SSC/project-repo/uni-digital-oscilloscope/cmp.vhd sub00/vhpl09 1370871254
+AR vga_ctrl behavioral E:/SEM2/SSC/project-repo/uni-digital-oscilloscope/vga_ctrl.vhd sub00/vhpl07 1370871252
+EN sampler NULL E:/SEM2/SSC/project-repo/uni-digital-oscilloscope/sampler.vhd sub00/vhpl02 1370871247
+AR sampler behavioral E:/SEM2/SSC/project-repo/uni-digital-oscilloscope/sampler.vhd sub00/vhpl03 1370871248
+EN d_latch NULL E:/SEM2/SSC/project-repo/uni-digital-oscilloscope/d_latch.vhd sub00/vhpl12 1370871257
+AR d_latch behavioral E:/SEM2/SSC/project-repo/uni-digital-oscilloscope/d_latch.vhd sub00/vhpl13 1370871258
+EN comm NULL E:/SEM2/SSC/project-repo/uni-digital-oscilloscope/comm.vhd sub00/vhpl00 1370871245
+AR randgen behavioral E:/SEM2/SSC/project-repo/uni-digital-oscilloscope/randgen.vhd sub00/vhpl05 1370871250
