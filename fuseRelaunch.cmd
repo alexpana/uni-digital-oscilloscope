@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "E:/SEM2/SSC/project-repo/uni-digital-oscilloscope/oscTopTest_isim_beh.exe" -prj "E:/SEM2/SSC/project-repo/uni-digital-oscilloscope/oscTopTest_beh.prj" "work.oscTopTest" 

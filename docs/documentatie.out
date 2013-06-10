@@ -4,6 +4,9 @@
 \BOOKMARK [2][-]{subsection.2.2}{Tema Proiectului}{section.2}% 4
 \BOOKMARK [2][-]{subsection.2.3}{Continutul si Structura Documentului}{section.2}% 5
 \BOOKMARK [1][-]{section.3}{Fundamentare teoretica}{}% 6
-\BOOKMARK [1][-]{section.4}{Proiectare si implementare}{}% 7
-\BOOKMARK [1][-]{section.5}{Rezultate experimentale}{}% 8
-\BOOKMARK [1][-]{section.6}{Concluzii}{}% 9
+\BOOKMARK [2][-]{subsection.3.1}{Semnalul video VGA}{section.3}% 7
+\BOOKMARK [1][-]{section.4}{Proiectare si implementare}{}% 8
+\BOOKMARK [2][-]{subsection.4.1}{Blocul de esantionare}{section.4}% 9
+\BOOKMARK [2][-]{subsection.4.2}{Logica de iesire}{section.4}% 10
+\BOOKMARK [1][-]{section.5}{Rezultate experimentale}{}% 11
+\BOOKMARK [1][-]{section.6}{Concluzii}{}% 12

@@ -5,9 +5,10 @@
 \usepackage{amssymb}
 \usepackage[pdftex]{graphicx}
 \usepackage[colorlinks=true, hidelinks]{hyperref}
+\usepackage{listings}
 \usepackage[romanian]{babel}
 \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
-
+\lstset{language=VHDL}
 \graphicspath{ {img/} }
 
 \begin{document}
@@ -29,10 +30,12 @@
 \clearpage
 
 \section{Rezumat}
+\input{./rezumat.tex}
 \clearpage
 
+\section{Introducere}
 \input{./introducere.tex}
-
+\clearpage
 
 \section{Fundamentare teoretica}
 \paragraph{}
@@ -40,40 +43,27 @@ Osciloscopul este un dispozitiv electronic de testare ce permite
 observarea unor semnale ce variaza constant sub forma unui grafic bidimensional.
 Graficul foloseste axa Y pentru a reprezenta valoarea semnalului in functie de timp.
 
-\paragraph{}
-Fiind un aparat de masura ce ofera 
-
+\input{./fundamentare_teoretica_vga.tex}
 \clearpage
 
 \section{Proiectare si implementare}
+\input{./implementare_intro.tex}
+\clearpage
 
-Osciloscopul va fi format din 3 parti: Logica de intrare, Memoria esantioanelor si logica de iesire.
-
-\begin{figure}[h]
-\centering
-\includegraphics[width=320pt]{block_diagram}
-\caption{Schema Block}
-\label{fig:block_diagram}
-\end{figure}
-
-\paragraph{}
-Propunem o implementare in limbaj de descriere hardware a unui osciloscop digital ce poate fi sintetizat pe o placa \textbf{FPGA Basys 2 (Spartan 3E)}. Pentru esantionarea semnalului de intrare vom folosi un convertor analog digital. Vom realiza un protocol de comunicare intre convertor si placuta FPGA astfel incat sa fie usor de schimbat cu alt convertor de exemplu. Frecventa de esantionare a semnalului o vom controla de la switch-uri sau butoane. 
-\paragraph{}
-Dispunem de o placuta \textbf{CEREBOT II}, placuta care are integrat un  \textbf{convertor AD/10 biti} pe care il putem folosi. Pentru afisarea datelor vom folosi un monitor cu intrare \textbf{VGA}. Placuta Basys 2 dispune de o iesire VGA integrata. Controlul osciloscopului se va face cu ajutorul butoanelor si switch-urilor placutei Basys 2.
-\paragraph{}
-Ideea de baza a dispozitivului e sa esantioneze un semnal la un interval de timp modificabil si sa salveze pentru fiecare perioada de timp o valoare care reprezinta amplitudinea semnalului de intrare. Dimensiunea intervalului de timp monitorizat este prestabilit sau se poate controla de la switch-uri/butoane. De fiecare data cand intervalul este baleiat vom trimite datele spre controller-ul VGA spre a fi afisate. 
-\paragraph{}
-Pentru afisarea graficului putem utiliza interpolare spline liniara intre valorile succesive ale amplitudinii semnalului. Cel mai probabil vom avea nevoie de o matrice bidimensionala de pixeli (framebuffer) in care vom desena forma de unda a semnalului de intrare.
-
+\input{./bloc_esantionare.tex}
+\input{./implementare_vga.tex}
 \clearpage
 
 \section{Rezultate experimentale}
-
 \clearpage
 
 \section{Concluzii}
-
-\clearpage
+\paragraph{}
+In primul rand acest proiect este mai mult didactic si nu poate inlocui solutii care sunt mai eficiente din punct de vedere calitate/pret. Contributia noastra a fost determinarea componentelor unui osciloscop digital si implementarea acestuia pe o placuta FPGA in limbajul VHDL. Automatele de stare au fost folosite excesiv pentru controlul componentelor, astfel demonstrandu-se puterea lor in a rezolva probleme de timp real.
+\paragraph{}
+Design-ul ofera un anumit grad de flexibilitate, osciloscopul avand posibilitatea de a fi conectat la orice monitor VGA si la orice sistem de achizitie atat timp cat se respecta protocolul de comunicare (COMM).
+\paragraph{}
+Pentru entuziasti, sistemul poate fi folosit pentru verificarea unor semnale analogice cu conditia ca acestea sa aiba tensiunea suportata de ADC-ul placutei CEREBOT 2. Sistemul poate fi extins adaugand module care sa afiseze date statistice sau auxiliare pe monitorul VGA, cum ar fi o legenda de timp, sau frecventa si amplitudinea undei detectate.
 
 \input{./pagina_bibliografie.tex}
 

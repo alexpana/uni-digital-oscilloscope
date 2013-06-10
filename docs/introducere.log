@@ -1,9 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.6.7)  9 JUN 2013 00:09
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.3.30)  9 JUN 2013 19:10
 entering extended mode
 **introducere.tex
-
-(E:\Dropbox\Universitate\Anul3\Sem_2_Structura_Sistemelor_Calcul\oscilloscope\d
-ocs\introducere.tex
+(E:\SEM2\SSC\project-repo\uni-digital-oscilloscope\docs\introducere.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -761,7 +759,7 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 26--32
 
 
 Overfull \hbox (131.60591pt too wide) in paragraph at lines 26--32
-[]\OML/cmm/m/it/10 scilloscope[][]$ 
+$[]\OML/cmm/m/it/10 scilloscope[][]$ 
  []
 
 ! Undefined control sequence.
@@ -3578,7 +3576,7 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 60--66
 
 
 Overfull \hbox (145.385pt too wide) in paragraph at lines 60--66
-[]\OML/cmm/m/it/10 santionare[][]$ 
+$[]\OML/cmm/m/it/10 santionare[][]$ 
  []
 
 
@@ -4001,7 +3999,7 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 70--77
 
 
 Overfull \hbox (107.0048pt too wide) in paragraph at lines 70--77
-[]\OML/cmm/m/it/10 fisare[][]$
+$[]\OML/cmm/m/it/10 fisare[][]$
  []
 
 ! Undefined control sequence.
@@ -5824,7 +5822,7 @@ and I'll forget about whatever was undefined.
  
 Here is how much of TeX's memory you used:
  19 strings out of 493921
- 481 string characters out of 3150895
+ 400 string characters out of 3147288
  52031 words of memory out of 3000000
  3409 multiletter control sequences out of 15000+200000
  3986 words of font info for 15 fonts, out of 3000000 for 9000

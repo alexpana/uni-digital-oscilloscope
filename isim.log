@@ -1,0 +1,97 @@
+ISim log file
+Running: E:\SEM2\SSC\project-repo\uni-digital-oscilloscope\oscTopTest_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb E:/SEM2/SSC/project-repo/uni-digital-oscilloscope/oscTopTest_isim_beh.wdb 
+ISim P.49d (signature 0x8ef4fb42)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /osctoptest/uut/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 0 ps, Instance /osctoptest/uut/fpga_sampler/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+Finished circuit initialization process.
+# restart
+# run 1.00us
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /osctoptest/uut/fpga_sampler/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+Finished circuit initialization process.
+# run 100.00us
+# run 100.00us
+# run 100.00us
+# run 100.00us
+# run 100.00us
+# run 100.00us
+# run 1 ms
+ISim P.49d (signature 0x8ef4fb42)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /osctoptest/uut/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 0 ps, Instance /osctoptest/uut/fpga_sampler/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+Finished circuit initialization process.
+# run 1 ms
+at 52625 ns(2), Instance /osctoptest/uut/fpga_sampler/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 105235 ns(2), Instance /osctoptest/uut/fpga_sampler/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 157845 ns(2), Instance /osctoptest/uut/fpga_sampler/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 210455 ns(2), Instance /osctoptest/uut/fpga_sampler/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 263065 ns(2), Instance /osctoptest/uut/fpga_sampler/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 315675 ns(2), Instance /osctoptest/uut/fpga_sampler/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 368285 ns(2), Instance /osctoptest/uut/fpga_sampler/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 420895 ns(2), Instance /osctoptest/uut/fpga_sampler/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 473505 ns(2), Instance /osctoptest/uut/fpga_sampler/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 526115 ns(2), Instance /osctoptest/uut/fpga_sampler/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 578725 ns(2), Instance /osctoptest/uut/fpga_sampler/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 631335 ns(2), Instance /osctoptest/uut/fpga_sampler/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 683945 ns(2), Instance /osctoptest/uut/fpga_sampler/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 736555 ns(2), Instance /osctoptest/uut/fpga_sampler/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 789165 ns(2), Instance /osctoptest/uut/fpga_sampler/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 841775 ns(2), Instance /osctoptest/uut/fpga_sampler/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 894385 ns(2), Instance /osctoptest/uut/fpga_sampler/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 946995 ns(2), Instance /osctoptest/uut/fpga_sampler/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 999605 ns(2), Instance /osctoptest/uut/fpga_sampler/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# run 1 ms
+at 1052215 ns(2), Instance /osctoptest/uut/fpga_sampler/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 1104825 ns(2), Instance /osctoptest/uut/fpga_sampler/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 1157435 ns(2), Instance /osctoptest/uut/fpga_sampler/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 1210045 ns(2), Instance /osctoptest/uut/fpga_sampler/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 1262655 ns(2), Instance /osctoptest/uut/fpga_sampler/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 1315265 ns(2), Instance /osctoptest/uut/fpga_sampler/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 1367875 ns(2), Instance /osctoptest/uut/fpga_sampler/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 1420485 ns(2), Instance /osctoptest/uut/fpga_sampler/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 1473095 ns(2), Instance /osctoptest/uut/fpga_sampler/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 1525705 ns(2), Instance /osctoptest/uut/fpga_sampler/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 1578315 ns(2), Instance /osctoptest/uut/fpga_sampler/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 1630925 ns(2), Instance /osctoptest/uut/fpga_sampler/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 1683535 ns(2), Instance /osctoptest/uut/fpga_sampler/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 1736145 ns(2), Instance /osctoptest/uut/fpga_sampler/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 1788755 ns(2), Instance /osctoptest/uut/fpga_sampler/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 1841365 ns(2), Instance /osctoptest/uut/fpga_sampler/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 1893975 ns(2), Instance /osctoptest/uut/fpga_sampler/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 1946585 ns(2), Instance /osctoptest/uut/fpga_sampler/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 1999195 ns(2), Instance /osctoptest/uut/fpga_sampler/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# run 1 ms
+at 2051805 ns(2), Instance /osctoptest/uut/fpga_sampler/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 2104415 ns(2), Instance /osctoptest/uut/fpga_sampler/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 2157025 ns(2), Instance /osctoptest/uut/fpga_sampler/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 2209635 ns(2), Instance /osctoptest/uut/fpga_sampler/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 2262245 ns(2), Instance /osctoptest/uut/fpga_sampler/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 2314855 ns(2), Instance /osctoptest/uut/fpga_sampler/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 2367465 ns(2), Instance /osctoptest/uut/fpga_sampler/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 2420075 ns(2), Instance /osctoptest/uut/fpga_sampler/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 2472685 ns(2), Instance /osctoptest/uut/fpga_sampler/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 2525295 ns(2), Instance /osctoptest/uut/fpga_sampler/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 2577905 ns(2), Instance /osctoptest/uut/fpga_sampler/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 2630515 ns(2), Instance /osctoptest/uut/fpga_sampler/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 2683125 ns(2), Instance /osctoptest/uut/fpga_sampler/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 2735735 ns(2), Instance /osctoptest/uut/fpga_sampler/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 2788345 ns(2), Instance /osctoptest/uut/fpga_sampler/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 2840955 ns(2), Instance /osctoptest/uut/fpga_sampler/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 2893565 ns(2), Instance /osctoptest/uut/fpga_sampler/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 2946175 ns(2), Instance /osctoptest/uut/fpga_sampler/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 2998785 ns(2), Instance /osctoptest/uut/fpga_sampler/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.

@@ -1,9 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.6.7)  9 JUN 2013 00:11
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.3.30)  10 JUN 2013 01:38
 entering extended mode
 **pagina_titlu.tex
-
-(E:\Dropbox\Universitate\Anul3\Sem_2_Structura_Sistemelor_Calcul\oscilloscope\d
-ocs\pagina_titlu.tex
+(E:\SEM2\SSC\project-repo\uni-digital-oscilloscope\docs\pagina_titlu.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -314,7 +312,7 @@ or  <return>  to continue without it.
  
 Here is how much of TeX's memory you used:
  18 strings out of 493921
- 457 string characters out of 3150895
+ 376 string characters out of 3147288
  50031 words of memory out of 3000000
  3408 multiletter control sequences out of 15000+200000
  4595 words of font info for 17 fonts, out of 3000000 for 9000
